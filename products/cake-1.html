@@ -15,10 +15,10 @@
 
 </head>
 <style>
-     .top-row {
-            /* border: 1px solid lightsalmon; */
-            margin-top: 100px;
-        }
+    .top-row {
+        /* border: 1px solid lightsalmon; */
+        margin-top: 100px;
+    }
 </style>
 
 <body>
@@ -80,73 +80,94 @@
                 <h5 class="card-title">Banana Crunch</h5>
                 <h5 class="price">$12.00</h5>
                 <p class="card-text">Lorem Ipsum dolor sit amet</p>
+
+                <form action="/action_page.php">
+                    <div class="col-12 mt-4">
+                        <!-- <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-g4
+                      <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
+                    </div> -->
+                        <input type="email" class="form-control form-control-sm text-center" name="email" required=""
+                            placeholder="Email Address" data-nlok-ref-guid="2628b65b-e511-4cab-fefe-55d3531d876a">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+                        <div class="input-group-append">
+                            <span class="input-group-text">+</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <!--  -->
+                    <div class="container-sm mt-3">
+                        <h1>Input Group Buttons</h1>
+                        <div class="input-group mb-3">
+                            <span>
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-success" type="button">+</button>
+                                    <input type="text" class="form-control" placeholder="0">
+                                    <button class="btn btn-outline-danger" type="button">-</button>
+                            </span>
+                        </div>
+                    </div>
+                    <!--  -->
+                </form>
             </div>
+            <!--  -->
+
+            <!--  -->
         </div>
+
 
     </div>
 
-    <!--/*************************************************   /   -->
-    <!-- conti modal -->
-    <!-- <div class="modal fade show" id="login" style="display: block; padding-right: 17px;" aria-modal="true" role="dialog">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content border-0">
-			<div class="modal-body" style="border-radius: 10px;">
-				<div class="row h-100">
-					<div class="col-sm-6 d-none d-sm-block my-auto"><img src="https://www.contis.ph/assets/img/new/logo.png" class="img-fluid mx-auto my-auto d-block"></div>
-					<div class="col-12 col-sm-6 mx-auto">
-						<form method="post" action="https://www.contis.ph/utilities/actions/login.php">
-							<div class="col-12 text-center mt-3">
-								<h4>Enter your <span class="text-cgreen">Conti<span class="f-sfcartoonist">'</span>s Account Details</span></h4>
-							</div>
-							<div class="col-12 mt-3">
-								<input type="email" class="form-control form-control-sm text-center" name="email" required="" placeholder="Email Address" data-nlok-ref-guid="2628b65b-e511-4cab-fefe-55d3531d876a"><div id="norton-idsafe-field-styling-divId" style="height:22.545454545454547px;max-width:22.545454545454547px;vertical-align:top; position:absolute; top:4.227272727272727px;left:320.1319707160122px;cursor:pointer;resize: both;z-index:2147483646;"><img id="norton-idsafe-field-logo-imgId" src="chrome-extension://admmjipmmciaobhojoghlmleefbicajg/images/ic-field-logo.svg" style="height:22.545454545454547px; max-width:22.545454545454547px;"></div>
-							</div>
-							<div class="col-12 mt-3">
-								<input type="password" class="form-control form-control-sm text-center" name="password" required="" placeholder="Password" data-nlok-ref-guid="c300b5d7-ab9f-4e08-e35a-199598a77ae9"><div id="norton-idsafe-field-styling-divId" style="height:22.545454545454547px;max-width:22.545454545454547px;vertical-align:top; position:absolute; top:4.227272727272727px;left:320.1319707160122px;cursor:pointer;resize: both;z-index:2147483646;"><img id="norton-idsafe-field-logo-imgId" src="chrome-extension://admmjipmmciaobhojoghlmleefbicajg/images/ic-field-logo.svg" style="height:22.545454545454547px; max-width:22.545454545454547px;"></div>
-							</div>
-							<div class="col-12 mt-3">
-								<span class="small font-weight-bold">Forgot your Password? <a href="https://www.contis.ph/forgot/" class="font-weight-normal" type="button">Click here</a></span>
-							</div>
-							<div class="col-12 mt-3">
-								<input type="hidden" value="www.contis.ph/products/view/" name="curr_url">
-								<button type="submit" class="btn btn-sm btn-block btn-login" data-nlok-ref-guid="42036345-a7f6-4c52-fe60-6108a9bda6f7">Login</button>
-							</div>
-						</form>
-						<div class="col-12 mt-3">
-							<a href="https://www.contis.ph/register/">
-								<button type="button" class="btn btn-sm btn-block btn-register">Register Here</button>
-							</a>
-						</div>
-						<div class="col-12 mt-3">
-							<a href="https://www.contis.ph/utilities/actions/order/guest.php">
-								<button type="button" class="btn btn-sm btn-block btn-register">Order as Guest</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
+
 </body>
 <!-- Button to Open the Modal -->
 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     Open modal
 </button> -->
 
-<div class="modal" id="myModal">
+<div class="modal fade" id="myModal">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Modal Heading</h4>
+                <h4 class="modal-title">Enter your Cake Hunt Account Information</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
-                Modal body..
+
+                <form>
+                    <form action="/action_page.php">
+                        <div class="input-group mb-3">
+                            <!-- <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" id="usr" name="username"> -->
+                            <!--  -->
+
+                            <input type="email" class="form-control form-control-sm text-center" name="email"
+                                required="" placeholder="Email Address"
+                                data-nlok-ref-guid="2628b65b-e511-4cab-fefe-55d3531d876a">
+                            <!--  -->
+
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <!-- <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+                      <div class="input-group-append">
+                        <span class="input-group-text">@example.com</span> -->
+                            <input type="email" class="form-control form-control-sm text-center" name="password"
+                                required="" placeholder="Password"
+                                data-nlok-ref-guid="2628b65b-e511-4cab-fefe-55d3531d876a">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
             </div>
 
             <!-- Modal footer -->
@@ -156,5 +177,59 @@
             </div>
         </div>
 
+        <!-- <input type="email" class="form-control form-control-sm text-center" name="email" required=""
+            placeholder="Email Address" data-nlok-ref-guid="2628b65b-e511-4cab-fefe-55d3531d876a"> -->
+
+
+
 
 </html>
+<div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-2">
+								
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <button class="btn btn-success btn-sm btn-min" type="button"><i class="bx bx-minus-circle"></i></button>
+    </div>
+    <input type="text" class="form-control form-control-sm text-center" name="quantity" value="1" min="1" id="quantity" readonly="">
+    <div class="input-group-prepend">
+        <button class="btn btn-success btn-sm btn-plus" type="button"><i class="bx bx-plus-circle"></i></button>
+    </div>
+      </div>
+        </div>
+        <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center">
+            <input type="hidden" value="Almond Choco Sans Rival" name="product">
+            <input type="hidden" value="Almond Choco Sans Rival" name="product">
+            <input type="hidden" id="base_price" name="base_price" value="12">
+            <label class="small font-weight-bold text-uppercase mt-2">Total Price:</label>
+            <input type="text" readonly="" class="form-control form-control-sm text-center" id="total_price" value="0" name="total_price">
+        </div>
+        <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+            <input type="hidden" value="none" name="category">
+            <input type="hidden" value="fcake" name="menu">
+            <input type="hidden" value="3" name="menu_id">
+            <input type="hidden" name="size" id="input_size" value="Regular">
+                                                <a href="#login" data-toggle="modal" class="text-decoration-none"><button class="btn btn-success btn-sm btn-block" type="button" name="add_bag" id="addtobag">Add to Cart</button></a>
+                                                <a href="#" class="text-decoration-none"><button class="btn btn-dark btn-sm btn-block mt-2 mb-2" type="button">Back to Menu</button></a>
+        </div>
+        <a href="#login" data-toggle="modal" class="text-decoration-none"><button class="btn btn-success btn-sm btn-block" type="button" name="add_bag" id="addtobag">Add to Cart</button></a>
+        <a href="#" class="text-decoration-none"><button class="btn btn-dark btn-sm btn-block mt-2 mb-2" type="button">Back to Menu</button></a></div></form></div></div>
+       
+       
+       
+       <script type="text/javascript">
+            $("#agreeDPC").click(function() {
+                localStorage.setItem('dpc', $("#sid").val());
+            });
+        
+            $(window).on('load', function() {
+                if ("dpc" in localStorage) {
+                    if ($("#sid").val() == localStorage.getItem("dpc")) {
+                        console.log("true");
+                    } else {
+                        $('#privacy').modal('show');
+                    }
+                } else {
+                    $('#privacy').modal('show');
+                }
+            });
+        </script>
