@@ -6,7 +6,7 @@
     <title>PROJECT1</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>==$0 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -26,6 +26,21 @@
             margin-top: 100px;
         }
 
+        .topnav-right {
+            /* border: 1px solid lightsalmon; */
+            float: right;
+        }
+
+        .topnav-left {
+            /* border: 1px solid lightsalmon; */
+            float: left;
+        }
+
+        .collapsibleNavbar {
+            /* border: 1px solid lightsalmon; */
+            float: left;
+        }
+
         /*  .my-row {
             /* border: 1px solid lightsalmon; 
             margin-top: 50px;
@@ -41,248 +56,286 @@
 </script>
 
 <body>
+
     <div class="container-fluid">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-md navbar fixed-top bg-info navbar-dark justify-content-center">
+        <!-- <div class="container-fluid"> -->
+        <nav class="navbar navbar-expand-md navbar fixed-top bg-info navbar-dark"> <!--"justify-content-center"-->
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <h5>Cake Hunt</h5>
+                    <span>
+                        <h4>Home</h4>
+                    </span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse fixed" id="collapsibleNavbar">
+                <a class="navbar-brand" href="#">
+                    <span>
+                        <h1>Cake Hunt</h1>
+                    </span>
+                </a>
+                <div class="topnav">
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
+
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MENU</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ORDER NOW</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
-                        </li>
+                        <!-- <div class="topnav-left">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                        </div> -->
+                        <div class="navbar-nav topnav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MENU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#myModal" data-toggle="modal">ORDER NOW</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </div>
 
                     </ul>
                 </div>
-            </nav>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <div class="container my-container">
+        <div class="row g-3 top-row">
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="products/cake-1.html" class="btn stretched-link">
+                        <img src="assets/images/cake-1.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Banana Crunch</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-2.html" class="btn stretched-link">
+                        <img src="assets/images/cake-2.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Choco Overload</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-3.html" class="btn stretched-link">
+                        <img src="assets/images/cake-3.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Cookieccino</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-4.html" class="btn stretched-link">
+                        <img src="assets/images/cake-4.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Mango Tart</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container my-container">
-            <div class="row g-3 top-row">
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/BanaCrunch MDay cake.jpg" class="mx-auto d-block"
-                                style="width:100%">
-                        </a>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Banana Crunch</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Choco Overload.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Choco Overload</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Cookieccino FP 2925x2925.jpg" class="mx-auto d-block"
-                                style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Cookieccino</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Mango Tart.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Mango Tart</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
+        <div class="row g-3 top-row">
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-5.html" class="btn stretched-link">
+                        <img src="assets/images/cake-5.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Sans Rival</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
                     </div>
                 </div>
             </div>
-            <div class="row g-3 top-row">
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/new-Sans Rival.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Sans Rival</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Black Velvet.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Black Velvet</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Mango Cheesecake.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Mango Cheesecake</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Moist Chocolate.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Moist Chocolate</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-6.html" class="btn stretched-link">
+                        <img src="assets/images/cake-6.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Black Velvet</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
                     </div>
                 </div>
             </div>
-            <div class="row g-3 top-row">
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Chocolate Blush.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-7.html" class="btn stretched-link">
+                        <img src="assets/images/cake-7.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
 
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate Blush</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Chocolate Obsession.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Chocolate Obsession</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Hazelnut Fudge.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Hazelnut Fudge</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Mango Bravo.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Mango Bravo</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mango Cheesecake</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-8.html" class="btn stretched-link">
+                        <img src="assets/images/cake-8.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
 
-            <div class="row g-3 top-row">
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Almond Choco Sans Rival.jpg" class="mx-auto d-block"
-                                style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Almond Choco Sans Rival</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Moist Chocolate</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Blueberry Cheesecake.jpg" class="mx-auto d-block"
-                                style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Blueberry Cheesecake</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
+            </div>
+        </div>
+        <div class="row g-3 top-row">
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-9.html" class="btn stretched-link">
+                        <img src="assets/images/cake-9.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Blush</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Strawberry Shortcake.jpg" class="mx-auto d-block"
-                                style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Strawberry Shortcake</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-10.html" class="btn stretched-link">
+                        <img src="assets/images/cake-10.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Obsession</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-md-6 col-lg-3 my-col">
-                    <div class="card">
-                        <a href="#" class="btn stretched-link">
-                            <img src="assets/images/Ube Custard.jpg" class="mx-auto d-block" style="width:100%">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Ube Custard</h5>
-                            <h5 class="price">$12.00</h5>
-                            <p class="card-text">Lorem Ipsum dolor sit amet</p>
-                        </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-11.html" class="btn stretched-link">
+                        <img src="assets/images/cake-11.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Hazelnut Fudge</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-12.html" class="btn stretched-link">
+                        <img src="assets/images/cake-12.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Mango Bravo</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 top-row">
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-13.html" class="btn stretched-link">
+                        <img src="assets/images/cake-13.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Almond Choco Sans Rival</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-14.html" class="btn stretched-link">
+                        <img src="assets/images/cake-14.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Blueberry Cheesecake</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-15.html" class="btn stretched-link">
+                        <img src="assets/images/cake-15.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Shortcake</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-md-6 col-lg-3 my-col">
+                <div class="card">
+                    <a href="/products/cake-16.html" class="btn stretched-link">
+                        <img src="assets/images/cake-16.jpg" class="mx-auto d-block" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Ube Custard</h5>
+                        <h5 class="price">$12.00</h5>
+                        <p class="card-text">Lorem Ipsum dolor sit amet</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
 </body>
+<!-- Button to Open the Modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+</button> -->
+
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
 
 </html>
