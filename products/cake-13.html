@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -40,8 +40,29 @@
                 <div class="topnav">
                     <ul class="navbar-nav">
                         <div class="navbar-nav topnav-right">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">MENU</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">MENU</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="cake-1.html">Cake-1</a>
+                                    <a class="dropdown-item" href="cake-2.html">Cake-2</a>
+                                    <a class="dropdown-item" href="cake-3.html">Cake-3</a>
+                                    <a class="dropdown-item" href="cake-4.html">Cake-4</a>
+                                    <a class="dropdown-item" href="cake-5.html">Cake-5</a>
+                                    <a class="dropdown-item" href="cake-6.html">Cake-6</a>
+                                    <a class="dropdown-item" href="cake-7.html">Cake-7</a>
+                                    <a class="dropdown-item" href="cake-8.html">Cake-8</a>
+                                    <a class="dropdown-item" href="cake-9.html">Cake-9</a>
+                                    <a class="dropdown-item" href="cake-10.html">Cake-10</a>
+                                    <a class="dropdown-item" href="cake-11.html">Cake-11</a>
+                                    <a class="dropdown-item" href="cake-12.html">Cake-12</a>
+                                    <a class="dropdown-item" href="cake-13.html">Cake-13</a>
+                                    <a class="dropdown-item" href="cake-14.html">Cake-14</a>
+                                    <a class="dropdown-item" href="cake-15.html">Cake-15</a>
+                                    <a class="dropdown-item" href="cake-16.html">Cake-16</a>
+                                    <div class="dropdown-divider"></div> <a class="dropdown-item" href="../index.html">
+                                        Home</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#myModal" data-toggle="modal">ORDER NOW</a>
@@ -74,41 +95,35 @@
                         corporis rerum sapiente fuga tenetur debitis, totam aspernatur eveniet ratione necessitatibus
                         repudiandae enim ipsa quisquam quo voluptas? Consequatur, obcaecati?</p>
                 </div>
-                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-4">
                     <h5>Enter Quantity</h5>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <button class="btn btn-outline-success" type="button">+</button>
+                            <button class="btn btn-outline-success btn-sm" type="button">+</button>
                         </div>
-                        <input type="text" style="text-align:center" class="form-control" placeholder="0">
+                        <input type="text" style="text-align:center" class="form-control form-control-sm"
+                            placeholder="0">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-danger" type="submit">-</button>
+                            <button class="btn btn-outline-danger btn-sm" type="submit">-</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
 
-                    <label class="medium font-weight-bold text-uppercase mt-2">Total Price:</label>
+                    <label class="medium font-weight-bold text-uppercase mt-1">Total Price:</label>
                     <input type="text" readonly="" class="form-control form-control-sm text-center" id="total_price"
                         value="0" name="total_price">
                 </div>
                 <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
-                    <input type="hidden" value="none" name="category">
-                    <input type="hidden" value="fcake" name="menu">
-                    <input type="hidden" value="3" name="menu_id">
-                    <input type="hidden" name="size" id="input_size" value="Regular">
                     <a href="#myModal" data-toggle="modal" class="text-decoration-none"><button
                             class="btn btn-info btn-sm btn-block" type="button" name="add_bag" id="addtobag">Add
-                            to
-                            Cart</button></a>
+                            to Cart</button></a>
                     <a href="../index.html" class="text-decoration-none"><button
                             class="btn btn-dark btn-sm btn-block mt-2 mb-2" type="button">Back
                             to Menu</button></a>
                 </div>
             </div>
-            <!-- </form> -->
-
-        </div>
+       </div>
     </div>
 
     <div class="modal fade show" id="myModal">
