@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 <style>
@@ -58,7 +59,7 @@
                                     <a class="dropdown-item" href="cake-1.html">Cake-1</a>
                                     <a class="dropdown-item" href="cake-2.html">Cake-2</a>
                                     <a class="dropdown-item" href="cake-3.html">Cake-3</a>
-                                    <a class="dropdown-item" href="cake-4.html">Cake-4</a> 
+                                    <a class="dropdown-item" href="cake-4.html">Cake-4</a>
                                     <a class="dropdown-item" href="cake-5.html">Cake-5</a>
                                     <a class="dropdown-item" href="cake-6.html">Cake-6</a>
                                     <a class="dropdown-item" href="cake-7.html">Cake-7</a>
@@ -101,7 +102,7 @@
             <div class="col-12 col-lg-md-6 col-lg-6 my-col">
                 <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
                     <h5 class="card-title">Cake-1</h5>
-                    <h5 class="price">$12.00</h5>
+                    <h5 class="price-1">$24.00</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sapiente unde
                         est, dignissimos assumenda aspernatur laborum sed a soluta quisquam corrupti, debitis aliquid
                         reiciendis repudiandae quae quod impedit ducimus qui.</p>
@@ -129,32 +130,32 @@
                 <!--  -->
                 <!-- <div class="container-sm mt-3"> -->
 
-                    <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-4">
-                        <h5>Enter Quantity</h5>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <button class="btn btn-outline-success btn-sm" type="button">+</button>
-                            </div>
-                            <input type="text" style="text-align:center" class="form-control form-control-sm"
-                                placeholder="0">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-danger btn-sm" type="submit">-</button>
-                            </div>
+                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-4">
+                    <h5>Enter Quantity</h5>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-success btn-sm" type="button">+</button>
+                        </div>
+                        <input type="text" style="text-align:center" class="form-control form-control-sm"
+                            placeholder="0">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-danger btn-sm" type="submit">-</button>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
-    
-                        <label class="medium font-weight-bold text-uppercase mt-1">Total Price:</label>
-                        <input type="text" readonly="" class="form-control form-control-sm text-center" id="total_price"
-                            value="0" name="total_price">
-                    </div>
-                    <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
-                        <a href="#myModal" data-toggle="modal" class="text-decoration-none"><button
-                                class="btn btn-info btn-sm btn-block" type="button" name="add_bag" id="addtobag">Add
-                                to Cart</button></a>
-                        <a href="../index.html" class="text-decoration-none"><button
-                                class="btn btn-dark btn-sm btn-block mt-2 mb-2" type="button">Back
-                                to Menu</button></a>
+                </div>
+                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+
+                    <label class="medium font-weight-bold text-uppercase mt-1">Total Price:</label>
+                    <input type="text" readonly="" class="form-control form-control-sm text-center" id="total_price"
+                        value="0" name="total_price">
+                </div>
+                <div class="col-12 col-sm-10 mx-auto text-sm-justify text-center mt-3">
+                    <a href="#myModal" data-toggle="modal" class="text-decoration-none"><button
+                            class="btn btn-info btn-sm btn-block" type="button" name="add_bag" id="addtobag">Add
+                            to Cart</button></a>
+                    <a href="../index.html" class="text-decoration-none"><button
+                            class="btn btn-dark btn-sm btn-block mt-2 mb-2" type="button">Back
+                            to Menu</button></a>
                 </div>
             </div>
         </div>
@@ -170,7 +171,7 @@
             <div class="modal-content">
 
                 <!-- Modal Header -->
-               <div class="modal-header" style="text-align: center">
+                <div class="modal-header" style="text-align: center">
                     <h4 class="modal-title">Enter your Cake Hunt Account Information</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -199,7 +200,29 @@
                                     required="" placeholder="Password"
                                     data-nlok-ref-guid="2628b65b-e511-4cab-fefe-55d3531d876a">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                            <div class="col-12 mt-3">
+                                <span class="small font-weight-bold">Forgot your Password? <a href="#"
+                                        class="font-weight-normal" type="button">Click here</a></span>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input type="hidden" value="XXX" name="curr_url">
+                                <button type="submit" class="btn btn-sm btn-block btn-login"
+                                    data-nlok-ref-guid="42036345-a7f6-4c52-fe60-6108a9bda6f7">Login</button>
+                            </div>
+                            <!-- </form> -->
+                            <div class="col-12 mt-3">
+                                <a href="#">
+                                    <button type="button" class="btn btn-sm btn-block btn-register">Register
+                                        Here</button>
+                                </a>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <a href="#">
+                                    <button type="button" class="btn btn-sm btn-block btn-register">Order as
+                                        Guest</button>
+                                </a>
+                            </div>
                     </form>
                 </div>
             </div>
@@ -217,4 +240,3 @@
 </body>
 
 </html>
-
